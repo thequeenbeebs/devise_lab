@@ -20,6 +20,12 @@ We've already done that for you :)
 
 Run `bundle install`.
 
+***Note:*** If running `bundle install` gives you an error with installing `thin`, run the following:
+
+```sh
+gem install thin -- --with-cflags="-Wno-error=implicit-function-declaration"
+```
+
 Now run the installer:
 
     rails generate devise:install
